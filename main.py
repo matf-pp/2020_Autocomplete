@@ -28,9 +28,10 @@ def binarna_pretraga(uzorak,lista):
 
 
 
-
-f=open(sys.argv[1])
-
+try:
+    f=open(sys.argv[1],encoding="utf-8")
+except(IndexError):
+    exit("Navedite datoteku")
 lista=[]
 
 for linija in f:
