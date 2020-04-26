@@ -1,7 +1,9 @@
 import sys
 from tkinter import *
-import tkinter.font as font
+from tkinter import ttk
 import webbrowser
+from tkinter.messagebox import askyesno
+import tkinter.font as font
 
 def lexicographic_sort(lista):
     lista.sort(key=lambda x:x[0])
@@ -60,14 +62,25 @@ root=Tk()
 
 root.title("Autocomplete me")
 root.geometry("770x370")
+
+style=ttk.Style()
+style.configure("TButton", padding=6, relief="flat",font=('Helvetica', 12))
+style.configure('TEntry', padding=6, relief="flat",font=('Courier', 15))
+
 photo=PhotoImage(file="google_logo_new.png")
 label=Label(root,image=photo)
 label.place(x=275,y=2)
-mojFont=font.Font(family='Arial',size=14)
+mojFont=font.Font(family='Courier',size=14)
 l1=Label(root,text="Search query:",bg="white",fg="black")
 l1['font']=mojFont
-l1.place(x=35,y=110)
+l1.place(x=35,y=120)
+#b['font']=mojFont
 sv=StringVar()
+def Klik():
+    webbrowser.open("www.google.com/search?q="+te.get())
+
+b=ttk.Button( text='Search Google',command=Klik)
+b.place(x=600,y=110)
 
 def callback(sv,lista,br):
     a=sv.get().strip()
@@ -80,8 +93,8 @@ def callback(sv,lista,br):
         pom_lista.remove(x)
         x = binarna_pretraga(a, pom_lista)
     i = 0
-    l = Listbox(root, width=65)
-    l.place(x=190,y=140)
+    l = Listbox(root, width=33,font = ('courier', 15))
+    l.place(x=190,y=153)
     weight_sort(bin_lista)
     if len(bin_lista) == 0 or len(a) == 0:
             l.delete(0, END)
@@ -95,25 +108,23 @@ def callback(sv,lista,br):
             else:
                 l.insert(END,list[0])
             i += 1
+
     def CurSelet(evt):
         try:
-            value=str((l.get(l.curselection())))
-            pom=""
+            value = str((l.get(l.curselection())))
+            pom = ""
             for c in value:
                 if not c.isdecimal():
-                    pom+=c
+                    pom += c
             sv.set(pom)
         except(TclError):
             pass
-    l.bind('<<ListboxSelect>>',CurSelet)
-def Klik():
-    webbrowser.open("www.google.com/search?q="+te.get())
-b=Button(root, text='Search Google',height=1,command=Klik)
-b.place(x=600,y=110)
-b['font']=mojFont
+
+    l.bind('<<ListboxSelect>>', CurSelet)
+
 lexicographic_sort(lista)
 sv.trace("w", lambda name, index, mode, sv=sv: callback(sv,lista,br))
-te = Entry(root, textvariable=sv, width=65)
+te = ttk.Entry(textvariable=sv, width=32,font = ('courier', 15))
 te.place(x=190,y=115)
 var1=IntVar()
 c=Checkbutton(root, text="Show weights", variable=var1)
