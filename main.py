@@ -82,35 +82,31 @@ except(IndexError):
 root=Tk()
 
 root.title("Autocomplete me")
-root.geometry("770x370")
+root.geometry("940x370")
 
 style=ttk.Style()
 style.configure("TButton", padding=6, relief="flat",font=('Helvetica', 12))
 
-style.configure('TEntry', padding=6, relief="flat",font=('Arial', 15))
-
 photo=PhotoImage(file="novaslika.png")
 label=Label(root,image=photo)
 label.place(x=260,y=15)
-mojFont=font.Font(family='Arial',size=14)
 
 style.configure('TEntry', padding=6, relief="flat",font=('Courier', 15))
 
 photo=PhotoImage(file="novaslika.png")
 label=Label(root,image=photo)
-label.place(x=270,y=15)
-mojFont=font.Font(family='Courier',size=14)
+label.place(x=350,y=15)
+mojFont=font.Font(family='Courier',size=13)
 
 l1=Label(root,text="Search query:",bg="white",fg="black")
 l1['font']=mojFont
 l1.place(x=35,y=120)
-#b['font']=mojFont
 sv=StringVar()
 def Klik():
     webbrowser.open("www.google.com/search?q="+te.get())
 
 b=ttk.Button( text='Search Google',command=Klik)
-b.place(x=600,y=115)
+b.place(x=783,y=110)
 
 def callback(sv,lista,br):
     a=sv.get().strip()
@@ -128,9 +124,8 @@ def callback(sv,lista,br):
         for el in pom_lista:
             if rastojanje(te.get(),el[0])<2 and len(te.get())==len(el[0]):
                  bin_lista.append(el)
-    l = Listbox(root, width=33,font = ('Arial', 15))
 
-    l = Listbox(root, width=33,font = ('courier', 15))
+    l = Listbox(root, width=73,font = ('courier', 10))
     l.place(x=190,y=153)
     weight_sort(bin_lista)
     if len(bin_lista) == 0 or len(a) == 0:
@@ -142,7 +137,7 @@ def callback(sv,lista,br):
             if var1.get()==1:
                 tmp1=list[0].strip()
                 tmp2=str(list[1]).strip()
-                l.insert(END,f'{" "+tmp1:<{15}} {tmp2:>{15}}')
+                l.insert(END,f'{" "+tmp1:<{55}} {tmp2:>{15}}')
             else:
                 l.insert(END,list[0])
             i += 1
@@ -162,8 +157,7 @@ def callback(sv,lista,br):
 
 lexicographic_sort(lista)
 sv.trace("w", lambda name, index, mode, sv=sv: callback(sv,lista,br))
-te = ttk.Entry(textvariable=sv, width=32,font = ('Arial', 15))
-te = ttk.Entry(textvariable=sv, width=32,font = ('courier', 15))
+te = ttk.Entry(textvariable=sv, width=71,font = ('courier', 10))
 te.place(x=190,y=115)
 var1=IntVar()
 c=Checkbutton(root, text="Show weights", variable=var1)
