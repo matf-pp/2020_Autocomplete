@@ -1,9 +1,9 @@
 # Autocomplete
 ### Kratak opis
-Izdominirali najlaganije
+Implementacija jednostavne autocomplete aplikacije
 
 ### Jezici i tehnologije
-Nzm ni ja sta smo radili
+Program je napisan u programskom jeziku Python korišćenjem biblioteke Tkinter
 
 ### Pokretanje
 2 puta levi klik
