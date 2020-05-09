@@ -1,13 +1,13 @@
 # Autocomplete
 ### Kratak opis
-Implementacija jednostavne autocomplete aplikacije
+Implementacija jednostavne autocomplete aplikacije.
 
 ### Jezici i tehnologije
-Program je napisan u programskom jeziku Python korišćenjem biblioteke Tkinter
+Program je napisan u programskom jeziku Python korišćenjem biblioteke Tkinter.
 
 ### Pokretanje
-2 puta levi klik
+
 
 ### Autori
-Stevanko
-Vojan
+1. Stevan Dragović 331/2016  
+2. Jovan Ranđelović 211/2016 jovan.ran87@gmail.com
