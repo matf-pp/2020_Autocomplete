@@ -112,7 +112,7 @@ def callback(sv,lista,br):
     a=sv.get().strip()
     pom_lista = lista[:]
     bin_lista = []
-    lexicographic_sort(pom_lista)
+    sort_first_r(pom_lista,len(a))
     x = binarna_pretraga(a, pom_lista)
     while x != -1:
         bin_lista.append(x)
@@ -120,10 +120,11 @@ def callback(sv,lista,br):
         x = binarna_pretraga(a, pom_lista)
     i = 0
 
+
     if not bin_lista:
         for el in pom_lista:
             if rastojanje(te.get(),el[0])<2 and len(te.get())==len(el[0]):
-                 bin_lista.append(el)
+                bin_lista.append(el)
 
     l = Listbox(root, width=73,font = ('courier', 10))
     l.place(x=190,y=153)
