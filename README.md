@@ -25,7 +25,7 @@ Klikom na neki od ponuđenih rezultata i potom na dugme `Search Google` otvara s
 -----------------
 
 Program je napisan u programskom jeziku Python3 korišćenjem biblioteke Tkinter za GUI.
-### Pokretanje
+### Pokretanje programa
 -----------------
 
 Potrebno je imati instaliranu tkinter biblioteku, kao i webbrowser i numpy.
