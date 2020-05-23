@@ -38,6 +38,8 @@ Potrebno je imati instaliranu tkinter biblioteku, kao i webbrowser i numpy.
 Otvoriti terminal/command prompt i pozicionirati se na folder gde se nalaze svi fajlovi.
 Program se pokreće sa `py main.py wiktionary.txt/cities.txt k`, gde je prvi dodatni argmunent jedna od 2 datoteke koje predstavljaju bazu podataka a drugi je broj rezultata koji će se prikazati.
 
+Izvršna verzija programa može se preuzeti [odavde] https://drive.google.com/open?id=1DzoVQ0j0KVT89geYncGmDKhMyQXkqdvN
+
 ### Autori
 1. Stevan Dragović 331/2016 stevandragovic.10@gmail.com 
 2. Jovan Ranđelović 211/2016 jovan.ran87@gmail.com
