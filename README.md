@@ -35,7 +35,7 @@ Linux/Windows
 -----------------
 
 Potrebno je imati instaliranu tkinter biblioteku, kao i webbrowser i numpy.
-Program se pokreće sa `py main.py wiktionary.txt/cities.txt k`, gde je prvi dodatni argmunent jedna od 2 datoteke koje predstavljaju bazu podataka a drugi je broj rezultata koji će se prikazati.
+U sekciji releases nalazi se fajl autocomplete.zip kog je potrebno skinuti i pokrenuti main.exe.
 
 
 ### Autori
