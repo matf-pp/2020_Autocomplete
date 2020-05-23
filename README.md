@@ -7,7 +7,7 @@ Implementacija jednostavne autocomplete aplikacije. U polje predviđeno za unos 
 ![](https://github.com/matf-pp/2020_Autocomplete/blob/master/slika2.png)
 
 
-Prikazaju se rezultati koji počinju na unetu nisku, ali implementirana je i funkcionalnost koja obezbeđuje da ukoliko je korisnik pogrešio jedno slovo, na primer, izađe željeni rezultat (slova #a i #s su jedno pored drugog na tastaturi pa može doći do greške).
+Prikazaju se rezultati koji počinju na unetu nisku, ali implementirana je i funkcionalnost koja obezbeđuje da ukoliko je korisnik pogrešio jedno slovo, na primer, izađe željeni rezultat (slova # a i # s su jedno pored drugog na tastaturi pa može doći do greške).
 
 ![](https://github.com/matf-pp/2020_Autocomplete/blob/master/slika2.png)
 
