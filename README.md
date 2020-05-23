@@ -11,7 +11,7 @@ Prikazaju se rezultati koji počinju na unetu nisku, ali implementirana je i fun
 
 ![](https://github.com/matf-pp/2020_Autocomplete/blob/master/slika3.png)
 
-Postoji i opcija Show weights koja ukoliko je uključena prikazuje dodeljene težine rečima koje predstavljaju popularnost pretrage. Ukoliko je uneto slovo **P** u pretrazi za gradove, očekivano je da na vrhu pretrage bude Pariz recimo, a ne Pančevo.
+Postoji i opcija `Show weights` koja ukoliko je uključena prikazuje dodeljene težine rečima koje predstavljaju popularnost pretrage. Ukoliko je uneto slovo **P** u pretrazi za gradove, očekivano je da na vrhu pretrage bude Pariz recimo, a ne Pančevo.
 
 ### Jezici i tehnologije
 Program je napisan u programskom jeziku Python korišćenjem biblioteke Tkinter.
