@@ -22,9 +22,13 @@ Klikom na neki od ponuđenih rezultata i potom na dugme `Search Google` otvara s
 
 
 ### Jezici i tehnologije
-Program je napisan u programskom jeziku Python3 korišćenjem biblioteke Tkinter za GUI. Potrebno je imati instaliranu tkinter biblioteku, kao i webbrowser i numpy.
+-----------------
 
+Program je napisan u programskom jeziku Python3 korišćenjem biblioteke Tkinter za GUI.
 ### Pokretanje
+-----------------
+
+Potrebno je imati instaliranu tkinter biblioteku, kao i webbrowser i numpy.
 Program se pokreće `py main.py wiktionary.txt/cities.txt k`, gde je k broj rezultata koji će se prikazati.
 
 ### Autori
