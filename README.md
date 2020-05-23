@@ -4,6 +4,8 @@
 
 Implementacija jednostavne autocomplete aplikacije. U polje predviđeno za unos teksta korisnik unosi željenu nisku i na osnovu nje se izbacuju rezultati u listboxu koji se nalazi ispod. 
 
+![](https://github.com/matf-pp/2020_Autocomplete/blob/master/slika1.png)
+
 
 
 ### Jezici i tehnologije
