@@ -1,4 +1,5 @@
 import sys
+from sys import exit
 from tkinter import *
 from tkinter import ttk
 import webbrowser
