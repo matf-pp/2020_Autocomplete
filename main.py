@@ -54,27 +54,36 @@ def rastojanje(A,B):
             matrix[i][j] = min(x, y, z)
     return int(matrix[n][m])
 
-try:
-    f=open(sys.argv[1],encoding="utf-8")
-except(IndexError):
-    exit("Navedite datoteku")
-lista=[]
+print("Izaberite datoteku: [ 1 za wiktionary / 2 za cities]")
+unos =input()
+if unos=='1':
+    try:
+        f=open('wiktionary.txt',encoding="utf-8")
+    except(IOError):
+        exit('Neuspesno otvaranje datoteke')
 
-for linija in f:
-    text=linija.split()
-    if len(text)<2:
-        continue
-    text[0]=int(text[0])
-    if len(text)>2:
-        for i in range(2,len(text)):
-            text[1]+=" "+text[i]
-    torka=(text[1],text[0])
-    lista.append(torka)
+if unos=='2':
+    try:
+        f=open('cities.txt',encoding="utf-8")
+    except(IOError):
+        exit('Neuspesno otvaranje datoteke')
+print('Unesite broj rezultata za prikaz:')
+br=int(input())
+lista=[]
 try:
-    n1=sys.argv[2]
-    br=int(n1)
+    for linija in f:
+        text=linija.split()
+        if len(text)<2:
+            continue
+        text[0]=int(text[0])
+        if len(text)>2:
+            for i in range(2,len(text)):
+                text[1]+=" "+text[i]
+        torka=(text[1],text[0])
+        lista.append(torka)
 except(IndexError):
-    exit("Navedite broj")
+    pass
+
 
 
 
@@ -116,7 +125,7 @@ def callback(sv,lista,br):
     if a=="":
         l.insert(END,"")
         return None
-    if sys.argv[1]=='cities.txt':
+    if unos=='2':
         if len(a)>0:
             veliko_slovo=a[0].upper()
             a=veliko_slovo+a[1:]
@@ -130,7 +139,7 @@ def callback(sv,lista,br):
         x = binarna_pretraga(a, pom_lista)
     i = 0
     if not bin_lista:
-        if sys.argv[1]=='wiktionary.txt':
+        if unos=='1':
             a=a.lower()
             x = binarna_pretraga(a, pom_lista)
             while x != -1:
@@ -146,7 +155,6 @@ def callback(sv,lista,br):
                  bin_lista.append(el)
 
 
-    
     weight_sort(bin_lista)
     if len(bin_lista) == 0 or len(a) == 0:
             l.delete(0, END)
