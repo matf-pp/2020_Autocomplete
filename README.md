@@ -16,7 +16,6 @@ Postoji i opcija `Show weights` koja ukoliko je uključena prikazuje dodeljene t
 Klikom na neki od ponuđenih rezultata i potom na dugme `Search Google` otvara se Google pretraga izabranog rezultata.
 
 ![](https://github.com/matf-pp/2020_Autocomplete/blob/master/pic4.png)
-
 ![](https://github.com/matf-pp/2020_Autocomplete/blob/master/pic5.png)
 
 
