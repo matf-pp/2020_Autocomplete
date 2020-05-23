@@ -29,7 +29,7 @@ Program je napisan u programskom jeziku Python3 korišćenjem biblioteke Tkinter
 ### Operativni sistem
 -----------------
 
-Linux/Windows
+Windows
 
 ### Pokretanje programa
 -----------------
