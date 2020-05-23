@@ -1,6 +1,10 @@
 # Autocomplete
 ### Kratak opis
-Implementacija jednostavne autocomplete aplikacije.
+-----------------
+
+Implementacija jednostavne autocomplete aplikacije. U polje predviđeno za unos teksta korisnik unosi željenu nisku i na osnovu nje se izbacuju rezultati u listboxu koji se nalazi ispod. 
+
+
 
 ### Jezici i tehnologije
 Program je napisan u programskom jeziku Python korišćenjem biblioteke Tkinter.
