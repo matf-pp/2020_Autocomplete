@@ -146,9 +146,7 @@ def callback(sv,lista,br):
                  bin_lista.append(el)
 
 
-    if a=="":
-        l.insert(END,"")
-        return None
+    
     weight_sort(bin_lista)
     if len(bin_lista) == 0 or len(a) == 0:
             l.delete(0, END)
