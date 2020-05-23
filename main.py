@@ -110,13 +110,18 @@ b.place(x=783,y=110)
 
 def callback(sv,lista,br):
     a=sv.get().strip()
+    l = Listbox(root, width=73, font=('courier', 10))
+    l.place(x=190, y=153)
+    if a=="":
+        l.insert(END,"")
+        return None
     if sys.argv[1]=='cities.txt':
         if len(a)>0:
             veliko_slovo=a[0].upper()
             a=veliko_slovo+a[1:]
     pom_lista = lista[:]
     bin_lista = []
-    lexicographic_sort(pom_lista)
+    sort_first_r(pom_lista,len(a))
     x = binarna_pretraga(a, pom_lista)
     while x != -1:
         bin_lista.append(x)
@@ -139,8 +144,10 @@ def callback(sv,lista,br):
             if rastojanje(te.get(),el[0])==1 and len(te.get())==len(el[0]):
                  bin_lista.append(el)
 
-    l = Listbox(root, width=73,font = ('courier', 10))
-    l.place(x=190,y=153)
+
+    if a=="":
+        l.insert(END,"")
+        return None
     weight_sort(bin_lista)
     if len(bin_lista) == 0 or len(a) == 0:
             l.delete(0, END)
