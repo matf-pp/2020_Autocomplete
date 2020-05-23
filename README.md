@@ -2,7 +2,7 @@
 ### Kratak opis
 -----------------
 
-Implementacija jednostavne autocomplete aplikacije. U polje predviđeno za unos teksta korisnik unosi željenu nisku i na osnovu nje se izbacuju rezultati u listboxu koji se nalazi ispod. 
+Implementacija jednostavne autocomplete aplikacije. U polje predviđeno za unos teksta korisnik unosi željenu nisku i na osnovu nje se izbacuju rezultati sortirani opadajuće po težinama u listboxu koji se nalazi ispod. 
 
 ![](https://github.com/matf-pp/2020_Autocomplete/blob/master/slika2.png)
 
@@ -11,6 +11,7 @@ Prikazaju se rezultati koji počinju na unetu nisku, ali implementirana je i fun
 
 ![](https://github.com/matf-pp/2020_Autocomplete/blob/master/slika3.png)
 
+Postoji i opcija Show weights koja ukoliko je uključena prikazuje dodeljene težine rečima koje predstavljaju popularnost pretrage. Ukoliko je uneto slovo P u pretrazi za gradove
 
 ### Jezici i tehnologije
 Program je napisan u programskom jeziku Python korišćenjem biblioteke Tkinter.
