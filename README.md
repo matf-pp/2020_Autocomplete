@@ -36,7 +36,7 @@ Linux/Windows
 
 Potrebno je imati instaliranu tkinter biblioteku, kao i webbrowser i numpy.
 Otvoriti terminal/command prompt i pozicionirati se na folder gde se nalaze svi fajlovi.
-Program se pokreće `py main.py wiktionary.txt/cities.txt k`, gde je prvi dodatni argmunent jedna od 2 datoteke koje predstavljaju bazu podataka a drugi predstavlja broj rezultata koji će se prikazati.
+Program se pokreće sa `py main.py wiktionary.txt/cities.txt k`, gde je prvi dodatni argmunent jedna od 2 datoteke koje predstavljaju bazu podataka a drugi je broj rezultata koji će se prikazati.
 
 ### Autori
 1. Stevan Dragović 331/2016 stevandragovic.10@gmail.com 
