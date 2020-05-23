@@ -13,6 +13,12 @@ Prikazaju se rezultati koji počinju na unetu nisku, ali implementirana je i fun
 
 Postoji i opcija `Show weights` koja ukoliko je uključena prikazuje dodeljene težine rečima koje predstavljaju popularnost pretrage. Ukoliko je uneto slovo **P** u pretrazi za gradove, očekivano je da na vrhu pretrage bude Pariz recimo, a ne Pančevo.
 
+Klikom na neki od ponuđenih rezultata i potom na dugme `Search Google` otvara se Google pretraga izabranog rezultata.
+
+![](https://github.com/matf-pp/2020_Autocomplete/blob/master/slika4.png)
+![](https://github.com/matf-pp/2020_Autocomplete/blob/master/slika5.png)
+
+
 ### Jezici i tehnologije
 Program je napisan u programskom jeziku Python korišćenjem biblioteke Tkinter.
 
